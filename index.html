@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>LaundryExpress</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="scr"
+</head>
+
+<body>
+
+    <div class="wrapper">
+    <header>
+        <a href="#"> <img class="logo" src="./images/Logo.png"</a>
+        <nav>
+            <ul>
+                <li> <a href="tel:2565823200"> <img src="./images/icons/contact.svg" class="svgImage"
+                            alt="Contact">Phone</a> </li>
+                <li> <a href="https://www.google.com/maps?q=14040 US HWY 431, Guntersville, AL, 35976">
+                        <img src="./images/icons/directions.svg" alt="Directions">Location</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="gallery">
+        <img src="./images/gallery/motel.jpg" alt="Image 1" class="visible"/>
+        <img src="./images/gallery/Lobby1.jpg" alt="Image 2" />
+        <img src="./images/gallery/Lobby2.jpg" alt="Image 3" />
+        <img src="./images/gallery/Lobby3.jpg" alt="Image 4" />
+        <img src="./images/gallery/Bedroom1.jpg" alt="Image 5" />
+        <img src="./images/gallery/Bedroom2.jpeg" alt="Image 6" />
+    </div>
+
+        <div class="divider">
+            <h1>About Us</h1>
+        </div>
+
+        <div class="aboutUs">
+            <p>
+                Lake Side Inn Motel is a cozy and welcoming place, located just a short distance from beautiful Lake Guntersville. With its peaceful surroundings and scenic views, it’s the perfect spot to relax and enjoy the natural beauty of the area. Whether you're visiting for a weekend getaway or a longer stay, the motel offers comfortable rooms and friendly service. Guests can take in the lovely lake views and enjoy the calm atmosphere, making it a great choice for anyone looking for a peaceful retreat near the water.
+            </p>
+        </div>
+
+        <div class="divider">
+            <h1>Services</h1>
+        </div>
+
+        <div class="serviceContainer">
+            <div class="service">
+                <div class="serviceIcon">
+                    <img class="serviceImage" src="images/icons/safety.svg">
+                </div>
+                <div class="serviceDetail">
+                    <div class="serviceHeader">
+                        <h2>Safe & Clean Environment</h2>
+                    </div>
+                    <div class="serviceText">
+                        <p>At our motel, we focus on the safety and comfort of our guests by keeping everything clean and tidy. Our rooms and surrounding areas are regularly cleaned, and we have security measures in place to ensure a safe stay for everyone.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="serviceIcon">
+                    <img class="serviceImage" src="images/icons/laundry.svg">
+                </div>
+                <div class="serviceDetail">
+                    <div class="serviceHeader">
+                        <h2>Self-Service Washer & Dryer Machines</h2>
+                    </div>
+                    <div class="serviceText">
+                        <p>Our motel offers convenient self-service washer and dryer machines, making it easy for guests to take care of their laundry during their stay. Whether you're here for a short visit or a longer trip, you can quickly freshen up your clothes at any time. The machines are easy to use and available for your convenience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="serviceIcon">
+                    <img class="serviceImage" src="images/icons/wifi.svg">
+                </div>
+                <div class="serviceDetail">
+                    <div class="serviceHeader">
+                        <h2>Free Wifi</h2>
+                    </div>
+                    <div class="serviceText">
+                        <p>At our motel, we offer free Wi-Fi to all our guests, ensuring you stay connected throughout your visit. Whether you need to check emails, browse the web, or stream your favorite shows, our fast and reliable internet makes it easy. Available in all rooms and common areas, our free Wi-Fi adds convenience and comfort to your stay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">
+            <h1>Business Hours</h1>
+        </div>
+
+        <div class="hours">
+            <p>
+               CheckIn : After 1:00pm <br>
+               CheckOut : Before 11:00am <br>
+               Operation : 24 Hours <br>
+            </p>
+        </div>
+
+        <div class="divider">
+            <h1>Contact</h1>
+        </div>
+
+        <div class="Contact">
+            <p> Phone : 256-582-3200 <br>
+                Email : lakesideinn26@gmail.com </p>
+        </div>
+
+        <div class="divider">
+            <h1>Location</h1>
+        </div>
+
+        <div class="location">
+            <p>14040 US HWY 431, Guntersville, AL - 35976</p>
+        </div>
+
+        <div class="map">
+            <p><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.182244134185!2d-85.89796768452675!3d33.7817916806805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888a4a51a1581839%3A0xa1c4bb75db4f93e1!2s14040%20U.S.%20Hwy%20431%2C%20Alexandria%2C%20AL%2036250!5e0!3m2!1sen!2sus!4v1677825409703!5m2!1sen!2sus"
+                    style="border:0;" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+
+        <div class="footer">
+            <p>All Rights Reserved @Lakeside Inn</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll('.gallery img');
+            let current = 0;
+
+            function updateGallery() {
+                images.forEach((img, index) => {
+                    img.classList.remove('visible', 'left', 'right');
+                    if (index === current) {
+                        img.classList.add('visible');
+                    } else if (index === (current - 1 + images.length) % images.length) {
+                        img.classList.add('left');
+                    } else if (index === (current + 1) % images.length) {
+                        img.classList.add('right');
+                    }
+                });
+            }
+
+            function nextImage() {
+                current = (current + 1) % images.length;
+                updateGallery();
+            }
+
+            setInterval(nextImage, 3000); // Change image every 3 seconds
+
+            updateGallery();
+        });
+    </script>
+
+</body>
+
+</html>
