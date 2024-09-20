@@ -129,14 +129,14 @@ h2 {
 }
 
 .service {
-    align-items: center;
+    display: grid;
     padding: 16px 16px;
     border-radius: 10px;
     background-color: rgb(237, 241, 241);
 }
 
 .serviceIcon {
-    justify-content: center;
+    margin: auto;
 }
 
 .serviceImage {
@@ -146,7 +146,7 @@ h2 {
 }
 
 .serviceDetail {
-    align-items: flex-end;
+    text-align: center;
 }
 
 .map iframe {
