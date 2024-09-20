@@ -45,8 +45,8 @@
 
 body {
     font-family: 'Inter';
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 350;
     font-style: normal;
     background-color: white;
 }
@@ -64,8 +64,8 @@ header {
 }
 
 .logo {
-    height: 50px;
-    width: 80px;
+    height: 60px;
+    width: 100px;
 }
 
 nav ul {
@@ -85,8 +85,8 @@ nav a {
 }
 
 nav a img {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 a:link,
@@ -108,13 +108,13 @@ h2 {
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 250;
     font-style: normal;
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 200;
     font-style: normal;
 }
@@ -152,7 +152,7 @@ h2 {
 }
 
 .serviceImage {
-    height: 50px;
+    height: 75px;
     min-width: 50px;
     position: relative;
 }
